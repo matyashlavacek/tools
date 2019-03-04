@@ -4,6 +4,9 @@ Use this script after merging branch in git.
 This script gets name of current branch and if it is other branch than main,
 it will checkout master, pull latest changes and deletes the branch you
 were previously on.
+
+For convenience set alias in bash profile, e.g.:
+alias gg='python3 ~/tools/git-cleanup-pr.py'
 """
 import collections
 import subprocess
